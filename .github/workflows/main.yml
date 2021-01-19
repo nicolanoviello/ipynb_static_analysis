@@ -37,5 +37,5 @@ jobs:
         #run: jupyter-nbconvert -—to script *.ipynb
         run: python -m jupyter nbconvert *.ipynb --to python
       - name: Flake8 for lint
-        run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        run: flake8 . --count --select=F63,F7,F82 --show-source --statistics
         
