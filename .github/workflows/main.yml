@@ -36,6 +36,6 @@ jobs:
       - name: Convert ipynb in py
         #run: jupyter-nbconvert -—to script *.ipynb
         run: python -m jupyter nbconvert *.ipynb --to python
-      - name: Controllo l'effettiva presenza dei file python
-        #run: jupyter-nbconvert -—to script *.ipynb
-        run: ls
+      - name: Flake8 for lint
+        run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        
