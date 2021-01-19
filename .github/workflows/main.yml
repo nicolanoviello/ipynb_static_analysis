@@ -35,7 +35,7 @@ jobs:
           pip install -r requirements.txt
       - name: Convert ipynb in py
         #run: jupyter-nbconvert -—to script *.ipynb
-        run: python -m jupyter nbconvert *.ipynb --to python --stdout
+        run: python -m jupyter nbconvert *.ipynb --to python
       - name: Controllo l'effettiva presenza dei file python
         #run: jupyter-nbconvert -—to script *.ipynb
         run: ls
