@@ -34,4 +34,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Convert ipynb in py
-        run: jupyter nbconvert -—to script *.ipynb 
+        run: jupyter-nbconvert -—to script *.ipynb 
